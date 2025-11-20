@@ -1,0 +1,25 @@
+[
+  {
+    "idRelatorio" : 1,
+    "usuario" :
+    {
+      "nome" : "Felipe Silva Maciel",
+      "email" : "felipe.silva@work360.com"
+    },
+    "periodo" :
+    {
+      "inicio" : "2025-11-01T00:00:00",
+      "fim" : "2025-11-12T01:18:46"
+    },
+    "metricasAgregadas" :
+    {
+      "tarefasConcluidas" : 25,
+      "minutosFocoTotal" : null,
+      "riscoBurnout" : 0.65,
+      "tendenciaProdutividade" : "alta"
+    },
+    "recomendacaoIA" : "Recomendamos blocos de foco \"deep work\" nas terças.",
+    "resumo" : "Produtividade alta, risco de burnout moderado."
+  }
+]
+
