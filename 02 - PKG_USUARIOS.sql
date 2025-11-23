@@ -38,11 +38,11 @@ CREATE OR REPLACE PACKAGE BODY PKG_USUARIOS AS
         WHEN DUP_VAL_ON_INDEX THEN
             DBMS_OUTPUT.PUT_LINE('Erro: Email ' || p_email || ' já existe.');
         WHEN e_formato_invalido THEN
-            DBMS_OUTPUT.PUT_LINE(SQLERRM); -- Loga o erro de formato de e-mail
-            RAISE; -- Re-lança a exceção para o bloco chamador
+            DBMS_OUTPUT.PUT_LINE(SQLERRM); 
+            RAISE; 
         WHEN OTHERS THEN
             DBMS_OUTPUT.PUT_LINE('Erro inesperado ao inserir usuário: ' || SQLERRM);
-            RAISE; -- Re-lança outras exceções
+            RAISE; 
     END PRC_INS_USUARIO;
 
 

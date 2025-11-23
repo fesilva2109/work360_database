@@ -3,11 +3,8 @@ CREATE TABLE TB_FOCUS_SESSION (
     USER_ID NUMBER NOT NULL,
     START_TIME TIMESTAMP,
     END_TIME TIMESTAMP,
-    AVG_BPM NUMBER,       -- Vem do IoT
-    AVG_NOISE_DB NUMBER,  -- Vem do IoT
-    STATUS VARCHAR2(20)   -- 'EM_ANDAMENTO', 'CONCLUIDO'
+    AVG_BPM NUMBER,       
+    AVG_NOISE_DB NUMBER,  
+    STATUS VARCHAR2(20)  
 );
 
--- Procedure para gerar o JSON do Relatório (Baseado na imagem image_ca7c92.png)
--- Essa procedure deve fazer JOIN em TB_TAREFAS, TB_REUNIOES e TB_FOCUS_SESSION
--- e gerar um CLOB com o JSON formatado.
